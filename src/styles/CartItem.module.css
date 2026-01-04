@@ -1,0 +1,138 @@
+.item {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: all var(--motion-duration) ease;
+}
+
+.item:hover {
+  box-shadow: var(--shadow);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--color-bg);
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  justify-content: center;
+}
+
+.name {
+  margin: 0;
+  font-size: var(--font-h3);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.price {
+  margin: 0;
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.25rem;
+}
+
+.quantityBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: calc(var(--radius) / 2);
+  transition: all var(--motion-duration) ease;
+}
+
+.quantityBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.quantityBtn:focus-visible {
+  outline: var(--focus-ring) solid var(--color-accent);
+  outline-offset: 0;
+}
+
+.quantityValue {
+  min-width: 32px;
+  text-align: center;
+  font-size: var(--font-base);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.total {
+  font-size: var(--font-h3);
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.removeBtn {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+  border-radius: var(--radius);
+  font-size: var(--font-small);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--motion-duration) ease;
+}
+
+.removeBtn:hover {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.removeBtn:focus-visible {
+  outline: var(--focus-ring) solid #ff6b6b;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

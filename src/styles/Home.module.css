@@ -1,0 +1,122 @@
+.container {
+  min-height: calc(100vh - 80px);
+  padding: 0 var(--space-3);
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-5) 0 var(--space-4) 0;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-h1);
+  font-weight: 800;
+  color: var(--color-text);
+  margin: 0 0 var(--space-2) 0;
+  background: var(--color-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto var(--space-5) auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.panelColumn,
+.resultsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.explanation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.explanation h2 {
+  text-align: center;
+  font-size: var(--font-h2);
+  color: var(--color-text);
+  margin: 0 0 var(--space-4) 0;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.step {
+  text-align: center;
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: all var(--motion-duration) ease;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--space-2) auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: white;
+  font-size: var(--font-h3);
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.step h3 {
+  font-size: var(--font-h3);
+  color: var(--color-text);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.step p {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

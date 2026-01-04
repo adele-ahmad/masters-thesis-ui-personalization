@@ -1,0 +1,203 @@
+.preview {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  box-shadow: var(--shadow);
+  transition: all var(--motion-duration) ease;
+}
+
+.preview h2 {
+  margin: 0;
+  font-size: var(--font-h2);
+  color: var(--color-text);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.badge {
+  background: var(--color-accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: var(--font-small);
+  font-weight: 600;
+  animation: fadeIn var(--motion-duration) ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-3) 0;
+  font-size: var(--font-base);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.demo {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--component-gap);
+}
+
+.demo h3 {
+  margin: 0;
+  font-size: var(--font-h3);
+  color: var(--color-text);
+}
+
+.demo h4 {
+  margin: 0;
+  font-size: var(--font-base);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.demo p {
+  margin: 0;
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--component-gap);
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: var(--component-padding);
+  border-radius: var(--radius);
+  font-size: var(--font-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--motion-duration) ease;
+  min-height: var(--component-min-height);
+  border: none;
+}
+
+.primaryBtn {
+  background: var(--color-accent);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.primaryBtn:focus-visible,
+.secondaryBtn:focus-visible {
+  outline: var(--focus-ring) solid #4a9eff;
+  outline-offset: 2px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: var(--shadow);
+  transition: all var(--motion-duration) ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.listItem {
+  padding: var(--space-2);
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 4px;
+  font-size: var(--font-base);
+  color: var(--color-text);
+  transition: all var(--motion-duration) ease;
+}
+
+.listItem:hover {
+  background: rgba(74, 158, 255, 0.1);
+}
+
+.stats {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+}
+
+.stats h4 {
+  margin: 0 0 var(--space-2) 0;
+  font-size: var(--font-h3);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-1);
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-1) 0;
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+}
+
+.stat strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.disclaimer {
+  color: rgba(255, 165, 0, 0.8);
+  font-size: var(--font-small);
+  margin: var(--space-2) 0 var(--space-3) 0;
+  padding: var(--space-2);
+  background: rgba(255, 165, 0, 0.1);
+  border-left: 3px solid rgba(255, 165, 0, 0.6);
+  border-radius: 4px;
+  font-style: italic;
+  line-height: 1.5;
+}
