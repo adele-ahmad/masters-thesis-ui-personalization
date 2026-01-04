@@ -176,8 +176,13 @@ MIT
 
 ## Author
 
-[Your Name] - Master's Thesis Project
+## Author
 
+Adele Ahmad - Master's Thesis Project
+
+## Repository
+
+https://github.com/adele-ahmad/masters-thesis-ui-personalization
 ## Acknowledgments
 
 - TensorFlow.js team for browser-based ML

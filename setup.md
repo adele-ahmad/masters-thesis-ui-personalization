@@ -4,8 +4,8 @@ Final submission for Master's dissertation.
 
 ## Quick Start
 ```bash
-git clone https://github.com/YOUR-USERNAME/ai-ui-personalization.git
-cd ai-ui-personalization
+git clone https://github.com/adele-ahmad/masters-thesis-ui-personalization.git
+cd masters-thesis-ui-personalization
 npm install
 npm run dev
 ```
